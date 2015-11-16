@@ -84,7 +84,7 @@ class ApiKeyListener implements ListenerInterface
             $response->setContent($message);
         }
 
-        $response->setStatusCode(403);
+        $response->setStatusCode(401);
         $event->setResponse($response);
     }
 
